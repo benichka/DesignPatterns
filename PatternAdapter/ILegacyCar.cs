@@ -7,7 +7,7 @@ namespace PatternAdapter
     interface ILegacyCar
     {
         int HorsePower { get; }
-        int GearNumber { get; set; }
+        int GearNumber { get; }
         int Mph { get; }
 
         void ChangeGearNumber(int gearNumber);

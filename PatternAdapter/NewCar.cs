@@ -8,7 +8,9 @@ namespace PatternAdapter
     {
         private int _power;
         public int Power { get => _power; }
-        public int Gear { get; set; }
+
+        private int _gear;
+        public int Gear { get => _gear; }
 
         private int _speed;
         public int Speed { get => _speed; }
@@ -16,7 +18,7 @@ namespace PatternAdapter
         public NewCar()
         {
             _speed = 0;
-            Gear = 0;
+            _gear = 0;
             _power = 150;
         }
         public void Accelerate()
@@ -31,7 +33,7 @@ namespace PatternAdapter
 
         public void ChangeGear(int gearNumber)
         {
-            Gear = gearNumber;
+            _gear = gearNumber;
         }
     }
 }

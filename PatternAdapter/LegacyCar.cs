@@ -9,7 +9,8 @@ namespace PatternAdapter
         private int _horsePower;
         public int HorsePower { get => _horsePower; }
 
-        public int GearNumber { get; set; }
+        private int _gearNumber;
+        public int GearNumber { get => _gearNumber; }
 
         private int _mph;
         public int Mph { get => _mph; }
@@ -17,13 +18,13 @@ namespace PatternAdapter
         public LegacyCar()
         {
             _mph = 0;
-            GearNumber = 0;
+            _gearNumber = 0;
             _horsePower = 150;
         }
 
         public void ChangeGearNumber(int gearNumber)
         {
-            GearNumber = gearNumber;
+            _gearNumber = gearNumber;
         }
 
         public void SpeedDown()

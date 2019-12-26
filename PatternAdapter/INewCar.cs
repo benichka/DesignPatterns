@@ -7,7 +7,7 @@ namespace PatternAdapter
     interface INewCar
     {
         int Power { get; }
-        int Gear { get; set; }
+        int Gear { get; }
         int Speed { get; }
 
         void ChangeGear(int gearNumber);
