@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PatternAdapter
+﻿namespace PatternAdapter.SimpleCase
 {
     class LegacyCar : ILegacyCar
     {
@@ -22,6 +18,8 @@ namespace PatternAdapter
             _horsePower = 150;
         }
 
+        // This is a really simple use case so we don't bother with all the checks
+        // (negative gear or speed, etc.).
         public void ChangeGearNumber(int gearNumber)
         {
             _gearNumber = gearNumber;

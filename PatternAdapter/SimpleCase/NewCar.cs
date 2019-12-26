@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PatternAdapter
+namespace PatternAdapter.SimpleCase
 {
     class NewCar : INewCar
     {
@@ -21,6 +21,9 @@ namespace PatternAdapter
             _gear = 0;
             _power = 150;
         }
+
+        // This is a really simple use case so we don't bother with all the checks
+        // (negative gear or speed, etc.).
         public void Accelerate()
         {
             _speed += 5;
