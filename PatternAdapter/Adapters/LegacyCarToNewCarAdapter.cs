@@ -1,11 +1,11 @@
-﻿using PatternAdapter.SimpleCase;
+﻿using PatternAdapter.Contracts;
 
 namespace PatternAdapter.Adapters
 {
     /// <summary>
     /// Takes a legacy car and adapt it to be a new car; hence, implements the INewCar interface.
     /// </summary>
-    class LegacyCarToNewCarAdapter : INewCar
+    public class LegacyCarToNewCarAdapter : INewCar
     {
         /// <summary>The legacy car to adapt. It must me set in the constructor.</summary>
         private ILegacyCar _legacyCar;

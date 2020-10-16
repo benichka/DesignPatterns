@@ -1,6 +1,6 @@
-﻿namespace PatternAdapter.SimpleCase
+﻿namespace PatternAdapter.Contracts
 {
-    interface INewCar
+    public interface INewCar
     {
         int Power { get; }
         int Gear { get; }

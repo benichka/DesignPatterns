@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using PatternAdapter.Contracts;
 
-namespace PatternAdapter.SimpleCase
+namespace PatternAdapter.Concrete
 {
-    class NewCar : INewCar
+    public class NewCar : INewCar
     {
         private int _power;
         public int Power { get => _power; }

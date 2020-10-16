@@ -1,6 +1,8 @@
-﻿namespace PatternAdapter.SimpleCase
+﻿using PatternAdapter.Contracts;
+
+namespace PatternAdapter.Concrete
 {
-    class LegacyCar : ILegacyCar
+    public class LegacyCar : ILegacyCar
     {
         private int _horsePower;
         public int HorsePower { get => _horsePower; }
