@@ -3,6 +3,8 @@ using PatternAdapter.Adapters;
 using PatternAdapter.BadImplementation;
 using PatternAdapter.Concrete;
 using PatternAdapter.Contracts;
+using PatternObserver.Contracts;
+using PatternObserver.Implementation;
 using PatternStrategy.Algorithms;
 using PatternStrategy.Implementation;
 
@@ -90,6 +92,27 @@ namespace Client
 
             Console.WriteLine();
             #endregion Strategy.
+
+            #region Observer.
+            Console.WriteLine("---------------- OBSERVER ----------------");
+            CustomObservable observable = new CustomObservable();
+            CustomObserver observer1 = new CustomObserver(observable);
+            CustomObserver observer2 = new CustomObserver(observable);
+
+            observable.Register(observer1);
+            observable.Register(observer2);
+
+            observable.SetState("Initial update.");
+            Console.WriteLine($"Observer 1: {observer1.State}");
+            Console.WriteLine($"Observer 2: {observer2.State}");
+
+            observable.Unregister(observer2);
+            observable.SetState("Second update.");
+            Console.WriteLine($"Observer 1: {observer1.State}");
+            Console.WriteLine($"Observer 2: {observer2.State}");
+
+            Console.WriteLine();
+            #endregion Observer.
         }
     }
 }

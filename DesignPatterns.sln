@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csp
 		{8B547917-15D6-40E3-A17A-B2849A5F04EE} = {8B547917-15D6-40E3-A17A-B2849A5F04EE}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternObserver", "PatternObserver\PatternObserver.csproj", "{1189F5AA-A049-4DDE-A447-B2993416C116}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{98A8115C-B65E-48C3-AE61-579257B2C9B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98A8115C-B65E-48C3-AE61-579257B2C9B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98A8115C-B65E-48C3-AE61-579257B2C9B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1189F5AA-A049-4DDE-A447-B2993416C116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1189F5AA-A049-4DDE-A447-B2993416C116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1189F5AA-A049-4DDE-A447-B2993416C116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1189F5AA-A049-4DDE-A447-B2993416C116}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
