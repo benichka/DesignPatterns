@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Notify()&#xD;&#xA;for all o in observers&#xD;&#xA;{&#xD;&#xA;    o.Update();&#xD;&#xA;}">
+    <Position X="2.792" Y="1.167" Height="0.969" Width="1.835" />
+  </Comment>
+  <Comment CommentText="GetState()&#xD;&#xA;{&#xD;&#xA;    return state&#xD;&#xA;}">
+    <Position X="2.677" Y="4.312" Height="0.885" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Update()&#xD;&#xA;{&#xD;&#xA;    customObservable.GetState()&#xD;&#xA;}">
+    <Position X="7.927" Y="3.417" Height="0.833" Width="2.252" />
+  </Comment>
+  <Class Name="PatternObserver.Implementation.CustomObservable">
+    <Position X="0.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABEAAAAAAAAAAAAAAAAAAAAABAABEAAAAAAAAGAA=</HashCode>
+      <FileName>Implementation\CustomObservable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.273" />
+  </Class>
+  <Class Name="PatternObserver.Implementation.CustomObserver">
+    <Position X="5.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Implementation\CustomObserver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="customObservable" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="PatternObserver.Contracts.ICustomObservable">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAABAAAAAAAAAGAA=</HashCode>
+      <FileName>Contracts\ICustomObservable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Observers" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="PatternObserver.Contracts.ICustomObserver">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\ICustomObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
