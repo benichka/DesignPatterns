@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PatternAdapter\PatternAdapter.csproj" />
+    <ProjectReference Include="..\PatternFactoryMethod\PatternFactoryMethod.csproj" />
     <ProjectReference Include="..\PatternObserver\PatternObserver.csproj" />
     <ProjectReference Include="..\PatternStrategy\PatternStrategy.csproj" />
   </ItemGroup>

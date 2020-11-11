@@ -5,14 +5,16 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternAdapter", "PatternAdapter\PatternAdapter.csproj", "{8B547917-15D6-40E3-A17A-B2849A5F04EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternStrategy", "PatternStrategy\PatternStrategy.csproj", "{1995C948-03E5-4E9C-8435-B13862C8F0B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternStrategy", "PatternStrategy\PatternStrategy.csproj", "{1995C948-03E5-4E9C-8435-B13862C8F0B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{98A8115C-B65E-48C3-AE61-579257B2C9B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{98A8115C-B65E-48C3-AE61-579257B2C9B5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{8B547917-15D6-40E3-A17A-B2849A5F04EE} = {8B547917-15D6-40E3-A17A-B2849A5F04EE}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternObserver", "PatternObserver\PatternObserver.csproj", "{1189F5AA-A049-4DDE-A447-B2993416C116}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternObserver", "PatternObserver\PatternObserver.csproj", "{1189F5AA-A049-4DDE-A447-B2993416C116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternFactoryMethod", "PatternFactoryMethod\PatternFactoryMethod.csproj", "{D58ACBAA-2613-4415-B4B1-5A8A84ED3A81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,10 @@ Global
 		{1189F5AA-A049-4DDE-A447-B2993416C116}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1189F5AA-A049-4DDE-A447-B2993416C116}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1189F5AA-A049-4DDE-A447-B2993416C116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D58ACBAA-2613-4415-B4B1-5A8A84ED3A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58ACBAA-2613-4415-B4B1-5A8A84ED3A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58ACBAA-2613-4415-B4B1-5A8A84ED3A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58ACBAA-2613-4415-B4B1-5A8A84ED3A81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

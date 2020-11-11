@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using PatternAdapter.Adapters;
 using PatternAdapter.BadImplementation;
 using PatternAdapter.Concrete;
 using PatternAdapter.Contracts;
-using PatternObserver.Contracts;
+using PatternFactoryMethod;
+using PatternFactoryMethod.Example;
 using PatternObserver.Implementation;
 using PatternStrategy.Algorithms;
 using PatternStrategy.Implementation;
@@ -113,6 +115,26 @@ namespace Client
 
             Console.WriteLine();
             #endregion Observer.
+
+            #region Factory method.
+            Console.WriteLine("---------------- FACTORY ----------------");
+            // Instanciate a concrete factory.
+            Creator creator = new ConcreteCreator();
+
+            // Get a product (as a generic one) from the concrete factory.
+            var myProduct = creator.FactoryMethod();
+            Console.WriteLine($"{myProduct.Id} {myProduct.Colour}");
+
+            // For a less abtract explanation, it can be translated with pizza stores
+            // factory with this example.
+            AbstractPizzaStore chicagoPizzaStore = new ChicagoPizzaStore();
+            IPizza myChicagoPizza = chicagoPizzaStore.OrderPizza(new List<string>() { "Tomato", "Basil", "Ham" });
+
+            AbstractPizzaStore firenzePizzaStore = new FirenzePizzaStore();
+            IPizza myFirenzePizza = firenzePizzaStore.OrderPizza(new List<string>() { "Cream", "Onion", "Ham" });
+
+            Console.WriteLine();
+            #endregion Factory method.
         }
     }
 }
