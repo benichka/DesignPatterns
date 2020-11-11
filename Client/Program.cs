@@ -4,6 +4,7 @@ using PatternAdapter.Adapters;
 using PatternAdapter.BadImplementation;
 using PatternAdapter.Concrete;
 using PatternAdapter.Contracts;
+using PatternAbstractFactory;
 using PatternFactoryMethod;
 using PatternFactoryMethod.Example;
 using PatternObserver.Implementation;
@@ -135,6 +136,18 @@ namespace Client
 
             Console.WriteLine();
             #endregion Factory method.
+
+            #region Abstract factory.
+            Console.WriteLine("---------------- ABSTRACT FACTORY ----------------");
+            var clientAbstractFactory = new AbstractFactoryClient();
+            Console.WriteLine("Testing abstract factory with concrete factory 1:");
+            clientAbstractFactory.ClientMethod(new ConcreteFactory1());
+
+            Console.WriteLine("Testing abstract factory with concrete factory 2:");
+            clientAbstractFactory.ClientMethod(new ConcreteFactory2());
+
+            Console.WriteLine();
+            #endregion Abstract factory.
         }
     }
 }
